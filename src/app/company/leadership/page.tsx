@@ -1,13 +1,10 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import { ArrowRight, ShieldAlert } from "lucide-react";
 
 export default function LeadershipPage() {
-  useEffect(() => {
-    document.title = "Leadership Team | Akshay Infotech";
-  }, []);
 
   return (
     <div className="relative min-h-screen bg-[#030712] text-white pt-36 pb-16 flex flex-col items-center justify-center overflow-hidden">

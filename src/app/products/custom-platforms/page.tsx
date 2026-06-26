@@ -14,10 +14,6 @@ const benefits = [
 ];
 
 export default function CustomPlatformsPage() {
-  React.useEffect(() => {
-    document.title = "Custom Platforms | Akshay Infotech";
-  }, []);
-
   return (
     <div className="bg-white">
       {/* Product Hero */}

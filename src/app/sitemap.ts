@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { blogPosts } from "@/app/blog/blogData";
 
 export const dynamic = "force-static";
 
@@ -91,13 +92,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogRoutes = [
-    "maximizing-lighthouse-scores",
-    "secure-telehealth-pipelines",
-    "headless-commerce-conversions",
-    "kubernetes-deployment-pipelines"
-  ].map((slug) => ({
-    url: `${baseUrl}/blog/${slug}`,
+  const blogRoutes = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
     lastModified: now,
     changeFrequency: "weekly" as const,
     priority: 0.6,

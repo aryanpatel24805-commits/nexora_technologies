@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FileText, Shield, Globe, Users, CreditCard, AlertTriangle, Scale, Mail, ChevronDown, ChevronUp, Clock, CheckCircle } from "lucide-react";
+import { FileText, Shield, Globe, Users, CreditCard, AlertTriangle, Scale, Mail, ChevronDown, ChevronUp, CheckCircle } from "lucide-react";
 
 const sections = [
   {
@@ -73,7 +73,7 @@ const sections = [
     icon: Mail,
     color: "#3B82F6",
     title: "10. Contact Information",
-    content: `For questions, concerns, or legal notices regarding these Terms and Conditions, please contact us:\n\nAkshay Infotech Legal Department\nEmail: info@akshayinfoctech.net\nAddress: 100 Tech Plaza, San Francisco, CA 94107\n\nFor general inquiries: info@akshayinfoctech.net\nFor security matters: info@akshayinfoctech.net\n\nWe aim to respond to all legal inquiries in a timely manner.`,
+    content: `For questions, concerns, or legal notices regarding these Terms and Conditions, please contact us:\n\nAkshay Infotech Legal Department\nEmail: info@akshayinfotech.com\nPhone: +1 (555) 019-2834\nAddress: 100 Tech Plaza, San Francisco, CA 94107\n\nFor general inquiries: info@akshayinfotech.com\nFor security matters: info@akshayinfotech.com\n\nWe aim to respond to all legal inquiries within 5 business days.`,
   },
 ];
 
@@ -130,7 +130,6 @@ export default function TermsPage() {
               Please read these terms carefully before using Akshay Infotech services. They govern your relationship with us and outline your rights and obligations.
             </p>
             <div className="flex items-center justify-center gap-6 mt-6 text-xs text-slate-500">
-              <div className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> Last Updated: June 1, 2026</div>
               <div className="flex items-center gap-1.5"><CheckCircle className="h-3.5 w-3.5 text-emerald-400" /> Effective Immediately</div>
             </div>
           </motion.div>
@@ -158,7 +157,7 @@ export default function TermsPage() {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 space-y-8">
-          {sections.map((section, idx) => {
+          {sections.map((section) => {
             const Icon = section.icon;
             return (
               <motion.div

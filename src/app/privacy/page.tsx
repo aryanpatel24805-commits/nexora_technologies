@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Shield, Database, Cookie, BarChart2, Lock, UserCheck, Globe, Server, Eye, CheckCircle, Clock } from "lucide-react";
+import { Shield, Database, Cookie, BarChart2, Lock, UserCheck, Globe, Server, Eye, CheckCircle } from "lucide-react";
 
 const privacySections = [
   {
@@ -70,7 +70,7 @@ const privacySections = [
     color: "#EC4899",
     title: "Your Rights",
     items: [
-      { label: "Right to Access", desc: "Request a copy of all personal data we hold about you at any time by emailing info@akshayinfoctech.net." },
+      { label: "Right to Access", desc: "Request a copy of all personal data we hold about you at any time by emailing info@akshayinfotech.com." },
       { label: "Right to Rectification", desc: "Request correction of inaccurate or incomplete personal data in our records." },
       { label: "Right to Erasure", desc: "Request deletion of your personal data, subject to our legal retention obligations." },
       { label: "Right to Portability", desc: "Receive your personal data in a machine-readable format (JSON or CSV) upon request." },
@@ -83,7 +83,7 @@ const privacySections = [
     title: "Data Protection Standards",
     items: [
       { label: "Legal Basis", desc: "We process personal data under legitimate interest, contractual necessity, legal obligation, and explicit consent where required." },
-      { label: "Data Protection Officer", desc: "Our DPO can be reached at info@akshayinfoctech.net for any privacy-related inquiries or complaints." },
+      { label: "Data Protection Officer", desc: "Our DPO can be reached at info@akshayinfotech.com for any privacy-related inquiries or complaints." },
       { label: "Cross-Border Transfers", desc: "Data transfers are protected by standard contractual frameworks ensuring appropriate security measures." },
       { label: "Supervisory Authority", desc: "Users have the right to file inquiries with relevant regulatory authorities." },
     ],
@@ -131,7 +131,6 @@ export default function PrivacyPolicyPage() {
               We are committed to protecting your personal data. This policy explains what we collect, how we use it, and your rights regarding your information.
             </p>
             <div className="flex items-center justify-center gap-6 mt-6 text-xs text-slate-500">
-              <div className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> Last Updated: June 1, 2026</div>
               <div className="flex items-center gap-1.5"><CheckCircle className="h-3.5 w-3.5 text-emerald-400" /> Privacy Aligned</div>
             </div>
           </motion.div>
@@ -169,7 +168,7 @@ export default function PrivacyPolicyPage() {
           <div className="text-[20vw] font-black text-slate-100 tracking-widest leading-none rotate-[-12deg] opacity-30">NX</div>
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-6 space-y-8">
-          {privacySections.map((section, idx) => {
+          {privacySections.map((section) => {
             const Icon = section.icon;
             return (
               <motion.div
